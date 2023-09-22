@@ -28,8 +28,8 @@
     }
 
     .page {
+        justify-content: flex-start;
         padding: 1rem;
         flex-direction: column;
-        justify-content: flex-start;
     }
 }
