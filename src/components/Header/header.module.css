@@ -1,0 +1,19 @@
+.Search{
+    width: 50%;
+    height: 50%;
+    border: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    overflow: hidden;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 767px) {
+    .Search {
+        display: none;
+    }
+}

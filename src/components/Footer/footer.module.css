@@ -1,0 +1,24 @@
+.footer {
+    width: 100%;
+    background: #292d2e;
+    color: #c8cece;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowBlock{
+    padding: 2rem;
+    color: #c8cece;
+    background: #222425;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-size: small;
+    }
+}

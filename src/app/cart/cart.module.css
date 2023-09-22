@@ -1,0 +1,110 @@
+.paymentModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.paymentType {
+    padding: 1rem;
+    width: 50%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cartPage {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap:2rem;
+    min-height:92vh;
+}
+
+.productLoop {
+    width: 70vw;
+}
+
+.ProductItem {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem;
+    display: flex;
+}
+
+.TotalBlock {
+    border: 2px solid #e6e6e6;
+    width: 25vw;
+    height: 75vh;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.Details {
+    display: flex;
+    flex-direction: column;
+}
+
+.InputBox {
+    width: 50%;
+}
+
+.InputBody {
+    display: flex;
+    gap: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .productLoop {
+        width: 100%;
+    }
+
+    .paymentModal {
+        width: 100vw;
+        overflow: auto;
+        height: 100vh;
+    }
+
+    .cartPage {
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    .TotalBlock {
+        width: 100%;
+        border: none;
+    }
+
+    .ProductItem {
+        flex-direction: column;
+    }
+
+    .Details {
+        width: 100%;
+    }
+
+    .InputBox {
+        width: 100%;
+    }
+
+    .InputBody {
+        flex-direction: column;
+    }
+}

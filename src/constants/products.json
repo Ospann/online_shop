@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Laptop Lenovo V15 G3 /15.6'', FHD/ Core I3, 1215U/ 8GB/ SSD 512GB/ DOS/ (82TT003SRU)",
+        "price": "1854",
+        "oldPrice": 1914,
+        "supplier type":"Verfied Suppliers",
+        "type":"Ready to Ship",
+        "rating": "4.8",
+        "sold": 120,
+        "description": "Test test testetest",
+        "images": [
+            "https://volt.kz/upload/resize_cache/iblock/1034/65//450_450_140cd750bba9870f18aada2478b24840a/product_image_45265_191275.jpg",
+            "https://volt.kz/upload/resize_cache/iblock/1034/65//450_450_140cd750bba9870f18aada2478b24840a/product_image_45265_191276.jpg",
+            "https://volt.kz/upload/resize_cache/iblock/1034/65//450_450_140cd750bba9870f18aada2478b24840a/product_image_45265_191277.jpg"
+        ]
+    },
+    {
+        "name": "Laptop Lenovo V15 G3 /15.6'', FHD/ Core I3, 1215U/ 8GB/ SSD 512GB/ DOS/ (82TT003SRU)",
+        "price": "1854",
+        "oldPrice": 1914,
+        "rating": "5.0",
+        "supplier type":"Trade Assurance",
+        "type":"Paid Samples",
+        "sold": 120,
+        "description": "Test test testetest",
+        "images": [
+            "https://volt.kz/upload/resize_cache/iblock/1034/65//450_450_140cd750bba9870f18aada2478b24840a/product_image_45265_191275.jpg",
+            "https://volt.kz/upload/resize_cache/iblock/1034/65//450_450_140cd750bba9870f18aada2478b24840a/product_image_45265_191276.jpg",
+            "https://volt.kz/upload/resize_cache/iblock/1034/65//450_450_140cd750bba9870f18aada2478b24840a/product_image_45265_191277.jpg"
+        ]
+    }
+]

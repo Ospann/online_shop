@@ -1,0 +1,59 @@
+.page {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
+    min-height: 92vh;
+}
+
+.productDetails {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.salesBlock {
+    border: 2px solid #e6e6e6;
+    width: 25vw;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.PriceBlock >button {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .page {
+        flex-direction: column;
+        padding:1rem;
+    }
+
+    .productDetails {
+        width: 100%;
+    }
+
+    .salesBlock {
+        display: none;
+    }
+
+    .PriceBlock {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .PriceBlock button {
+        display: block;
+    }
+}
