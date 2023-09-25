@@ -10,7 +10,7 @@ function ProductPage({ params }: { params: { id: string } }) {
     const { products } = useProductStore();
 
     const selectedProduct = products.find(p => p.id === Number(params.id));
-
+    
     if (!selectedProduct) {
         return <div>Loading</div>
     }

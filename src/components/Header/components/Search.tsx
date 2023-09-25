@@ -1,6 +1,6 @@
 'use client'
 
-import { InputBase, Button,Box } from '@mui/material';
+import { InputBase, Button, Box } from '@mui/material';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import { useState, useEffect } from 'react';
 import useURLParams from '@/utils/hooks/useURLParams';

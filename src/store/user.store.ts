@@ -8,24 +8,26 @@ interface StoreState {
   setCart: (id: number, qty: number) => void;
   updateCart: (id: number, qty: number) => void;
   clearCart: () => void;
+  replaceCart: (data: { id: number; qty: number }[]) => void;
 }
 
-const cartLocalStorageKey = "cartData"; 
+const cartLocalStorageKey = "cartData";
 
 const useUserStore = create<StoreState>((set) => ({
-  cart: loadCartFromLocalStorage(),
+  cart: [],
   setCart: (id, qty) => {
     set((state) => {
       const updatedCart = [...state.cart];
       const index = updatedCart.findIndex((item) => item.id === id);
 
       if (index !== -1) {
-        updatedCart.splice(index, 1); 
+        const updatedCart = state.cart.filter((item) => item.id !== id);
+        return { cart: updatedCart };
       }
 
-      updatedCart.push({ id, qty }); 
+      updatedCart.push({ id, qty });
 
-      saveCartToLocalStorage(updatedCart); 
+      saveCartToLocalStorage(updatedCart);
 
       return { cart: updatedCart };
     });
@@ -38,7 +40,7 @@ const useUserStore = create<StoreState>((set) => ({
       if (index !== -1) {
         updatedCart[index].qty = qty;
 
-        saveCartToLocalStorage(updatedCart); 
+        saveCartToLocalStorage(updatedCart);
       }
 
       return { cart: updatedCart };
@@ -50,15 +52,16 @@ const useUserStore = create<StoreState>((set) => ({
       return { cart: [] };
     });
   },
+  replaceCart: (data) => {
+    set(() => {
+      return { cart: data };
+    });
+  },
 }));
 
-function loadCartFromLocalStorage(): { id: number; qty: number }[] {
-  const cartData = localStorage.getItem(cartLocalStorageKey);
-  return cartData ? JSON.parse(cartData) : [];
-}
-
 function saveCartToLocalStorage(cart: { id: number; qty: number }[]) {
-  localStorage.setItem(cartLocalStorageKey, JSON.stringify(cart));
+  if (typeof window !== "undefined") {
+    localStorage.setItem(cartLocalStorageKey, JSON.stringify(cart));
+  }
 }
-
 export default useUserStore;
