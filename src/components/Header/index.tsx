@@ -13,7 +13,7 @@ const Header = () => {
                 display: 'flex',
                 justifyContent: 'space-between',
             }}>
-                <Link href={`/`} prefetch={false}>
+                <Link href={`/`} passHref >
                     <Typography variant="h6">Your Logo</Typography>
                 </Link>
                 <Search />
