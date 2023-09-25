@@ -48,7 +48,7 @@ const SalesBlock = ({ id, price }: IProduct) => {
                     variant="contained">
                     {existInCart ? "In Cart" : "Add to Cart"}
                 </Button>
-                <Link href={`/cart`} onClick={() => setCart(id, step)}>
+                <Link href={`/cart`} passHref onClick={() => { !existInCart && setCart(id, step) }}>
                     <Button
                         fullWidth
                         variant="outlined"

@@ -6,7 +6,6 @@ type StepperType = {
 }
 
 const Stepper = ({ step, handleClick }: StepperType) => {
-    console.log('sstepper')
     return (
         <Box sx={{
             display: 'flex',

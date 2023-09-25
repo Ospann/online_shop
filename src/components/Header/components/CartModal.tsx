@@ -74,7 +74,7 @@ const CartModal = ({ open, anchorEl, handleClose }: ICart) => {
                         <Typography>Total</Typography>
                         <Typography>${total}</Typography>
                     </Box>
-                    <Link href={`/cart`}>
+                    <Link href={`/cart`} passHref onClick={handleClose}>
                         <Button
                             variant="outlined"
                             disabled={cart.length === 0}

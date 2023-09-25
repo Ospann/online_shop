@@ -1,5 +1,4 @@
 'use client'
-
 import { useState } from "react";
 import { Box, Typography, Button, Divider } from "@mui/material";
 import useUserStore from "@/store/user.store";
@@ -15,7 +14,7 @@ const CartPage = () => {
     const { products } = useProductStore();
     const { cart, updateCart } = useUserStore();
     const [open, setOpen] = useState(false);
-
+    console.log(cart);
     let total = 0;
     return (
         <Box className={classes.cartPage}>
