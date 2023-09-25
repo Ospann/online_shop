@@ -1,5 +1,5 @@
 import { Box, Button } from "@mui/material";
-
+import classes from './stepper.module.css'
 type StepperType = {
     step: number;
     handleClick: (step: number) => void;
@@ -7,13 +7,7 @@ type StepperType = {
 
 const Stepper = ({ step, handleClick }: StepperType) => {
     return (
-        <Box sx={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            border: '1px solid #e6e6e6',
-            borderRadius: '5px',
-        }}>
+        <Box className={classes.stepper}>
             <Button
                 color="warning"
                 variant="contained"

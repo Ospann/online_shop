@@ -1,0 +1,7 @@
+.stepper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+}
