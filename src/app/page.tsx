@@ -1,5 +1,4 @@
 'use client'
-
 import Filter from "@/components/Filter";
 import { Box, Typography } from "@mui/material";
 import Card from '@/components/Card';

@@ -1,5 +1,4 @@
 'use client'
-
 import React from 'react';
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import Search from './components/Search';
@@ -13,7 +12,7 @@ const Header = () => {
                 display: 'flex',
                 justifyContent: 'space-between',
             }}>
-                <Link href={`/`} passHref >
+                <Link href={`/`} passHref>
                     <Typography variant="h6">Your Logo</Typography>
                 </Link>
                 <Search />
