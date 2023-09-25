@@ -20,7 +20,7 @@ const ProductDetails = ({ name, id, rating, sold, oldPrice, description, price }
             <Typography variant="body2">{description}</Typography>
             <Box className={classes.PriceBlock}>
                 <Discount oldPrice={oldPrice} price={price} />
-                <Link href={'/cart'} onClick={() => { !existInCart && setCart(id, 1) }}>
+                <Link href={'/cart'}  prefetch={false} onClick={() => { !existInCart && setCart(id, 1) }}>
                     <Button
                         color='warning'
                         variant='outlined'

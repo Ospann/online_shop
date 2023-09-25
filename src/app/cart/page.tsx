@@ -15,6 +15,7 @@ const CartPage = () => {
     const { cart, updateCart } = useUserStore();
     const [open, setOpen] = useState(false);
     console.log(cart);
+    console.log("prefetch")
     let total = 0;
     return (
         <Box className={classes.cartPage}>
